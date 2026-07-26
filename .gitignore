@@ -216,3 +216,55 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Turkish Public Procurement BI project
+# ============================================================
+
+# Private source and generated datasets
+data/raw/*
+!data/raw/.gitkeep
+
+data/interim/*
+!data/interim/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Keep public samples excluded until disclosure review is complete
+data/sample/*
+!data/sample/.gitkeep
+
+# Local databases
+*.duckdb
+*.duckdb.wal
+*.db
+*.db-journal
+
+# Power BI files can contain embedded underlying data
+powerbi/*.pbix
+powerbi/*.pbit
+powerbi/~$*.pbix
+powerbi/~$*.pbit
+
+# Excel workbooks may contain copied procurement data
+excel/*.xlsx
+excel/*.xls
+excel/*.xlsm
+excel/~$*
+
+# Local configuration, credentials, and secrets
+.env.*
+credentials*
+secrets*
+*.key
+
+# Generated outputs
+outputs/
+logs/
+*.log
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
