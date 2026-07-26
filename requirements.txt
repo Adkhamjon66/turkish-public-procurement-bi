@@ -1,0 +1,9 @@
+duckdb
+openpyxl
+pandas
+pyarrow
+pytest
+python-dotenv
+geopandas
+matplotlib
+seaborn
