@@ -1,0 +1,14 @@
+field_name,data_type,meaning,internal_need,public_need,risk_level,public_action,justification,status
+supplier,string,Supplier name or supplier identifier,yes,unknown,high,pending,Could identify an individual company or supplier,not_reviewed
+authority_id,string,Identifier of the purchasing public authority,yes,unknown,medium,pending,Could enable detailed authority-level identification,not_reviewed
+province,string,Province associated with the procurement record,yes,possible,low,pending,Geographic information may be suitable for aggregation but still requires review,not_reviewed
+contract_price,number,Awarded contract value,yes,possible,unknown,pending,Exact values may enable identification of individual contracts,not_reviewed
+total_estimated_cost,number,Estimated procurement value,yes,possible,unknown,pending,Exact estimates may enable identification of individual contracts,not_reviewed
+num_valid_offers,integer,Number of valid bids received,yes,possible,unknown,pending,May be safe in aggregates but exact contract-level publication requires review,not_reviewed
+method_code,string,Procurement procedure or method code,yes,possible,unknown,pending,Classification may be safe but must be reviewed with other identifying fields,not_reviewed
+procurement_type,string,Goods services or works classification,yes,possible,unknown,pending,Classification is a candidate for aggregated public reporting,not_reviewed
+okas_code,string,Procurement product classification code,yes,possible,unknown,pending,Detailed product codes may help identify individual contracts when combined with other fields,not_reviewed
+date,date,Procurement or contract date,yes,possible,unknown,pending,Exact dates may help identify individual contracts,not_reviewed
+description,string,Free-text contract or tender description,possible,no,high,pending,Free text may contain names addresses or other identifying information,not_reviewed
+address,string,Exact address or contact information,possible,no,high,pending,Direct identifying information should not be published,not_reviewed
+derived_aggregate,number,Aggregated national year province or sector statistic,no,yes,low,pending,Aggregated statistics are candidates for public release after validation,not_reviewed
