@@ -252,6 +252,8 @@ excel/*.xlsx
 excel/*.xls
 excel/*.xlsm
 excel/~$*
+excel/*.csv
+
 
 # Local configuration, credentials, and secrets
 .env.*
