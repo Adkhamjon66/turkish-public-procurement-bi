@@ -7,3 +7,5 @@ python-dotenv
 geopandas
 matplotlib
 seaborn
+jupyter
+ipykernel
